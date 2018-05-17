@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="933.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PetStoreController">
+   <children>
+      <AnchorPane fx:id="displayPane" layoutX="253.0" prefHeight="472.0" prefWidth="683.0" style="-fx-background-color: #D4D4D4;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="105.0" prefHeight="81.0" prefWidth="155.0" text="0">
+               <font>
+                  <Font name="Calibri Light" size="70.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="62.0" prefHeight="43.0" prefWidth="155.0" text="Total Pups">
+               <font>
+                  <Font name="Calibri Light" size="32.0" />
+               </font>
+            </Label>
+            <TableView fx:id="display" layoutY="221.0" prefHeight="250.0" prefWidth="683.0">
+              <columns>
+                <TableColumn editable="false" prefWidth="98.0" text="Pup ID" />
+                <TableColumn editable="false" prefWidth="217.0" text="Pup Name" />
+                  <TableColumn editable="false" minWidth="8.0" prefWidth="201.0" text="Pup Breed" />
+                  <TableColumn editable="false" minWidth="0.0" prefWidth="166.0" text="Pup Age (in months)" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="97.0" fitWidth="101.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icon-paw.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="pupBreed" focusColor="#2d882d" layoutX="31.0" layoutY="274.0" prefHeight="43.0" prefWidth="186.0" promptText="Pup Breed">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="pupAge" focusColor="#2d882d" layoutX="31.0" layoutY="333.0" prefHeight="43.0" prefWidth="186.0" promptText="Pup Age">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="addPup" layoutX="32.0" layoutY="400.0" onAction="#btnAdd" prefHeight="37.0" prefWidth="186.0" style="-fx-background-color: #2D882D;" text="Add Pup" textFill="#b5b5b5">
+         <font>
+            <Font name="Calibri Light" size="25.0" />
+         </font>
+         <effect>
+            <Shadow color="#26b937" height="35.83" radius="17.415" width="35.83" />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="pupName" focusColor="#2d882d" layoutX="32.0" layoutY="215.0" prefHeight="43.0" prefWidth="186.0" promptText="Pup Name">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="pupID" focusColor="#2d882d" layoutX="31.0" layoutY="164.0" prefHeight="43.0" prefWidth="186.0" promptText="Pup ID">
+         <font>
+            <Font name="Calibri Light" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="104.0" prefHeight="43.0" prefWidth="44.0" text="pu" textFill="#2d882d">
+         <font>
+            <Font name="Calibri Light" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="92.0" prefHeight="43.0" prefWidth="24.0" text="P" textFill="#c75e4c">
+         <font>
+            <Font name="Calibri Light" size="59.0" />
+         </font>
+         <effect>
+            <Shadow color="#c37041" height="15.07" radius="3.2675" width="0.0" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="135.0" layoutY="104.0" prefHeight="43.0" prefWidth="79.0" text="aradise" textFill="#2d882d">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

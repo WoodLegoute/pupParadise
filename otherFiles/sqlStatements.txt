@@ -1,0 +1,9 @@
+create table pups (
+pupID int(4) not null,
+pupName varchar(15) not null,
+pupBreed varchar(15) not null,
+pupAge int(2) not null,
+primary key (pupID)
+);
+
+insert into pups values (1000, 'Charlie', 'Husky', 1);
